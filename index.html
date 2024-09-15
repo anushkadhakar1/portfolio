@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3bd6191b2f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo">A<span>nushka.</span></h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>FrontEnd Developer</p>
+          <h1>Hi, I'm <span>Anushka</span> <br />Dhakar from Gwalior</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------about--------------------------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="./images/WhatsApp_Image_2024-09-07_at_9.11.47_PM-removebg-preview (1)-fotor-202409141510.png"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a passionate frontend developer with a strong focus on
+              building visually appealing, user-friendly, and responsive web
+              applications. With expertise in HTML, CSS, JavaScript, and modern
+              frameworks like React, I create dynamic, interactive experiences
+              that work seamlessly across devices. I enjoy transforming ideas
+              into reality through clean, efficient code and love to solve
+              problems through innovative solutions. My goal is to continually
+              grow as a developer while contributing to projects that make a
+              meaningful impact. When I’m not coding, I enjoy staying updated on
+              the latest web technologies and improving my design skills. Thank
+              You!!!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Frontend</span><br />Designing Web/App interfaces</li>
+                <li>
+                  <span>Web development skills</span><br />HTML | CSS |
+                  JavaScript | ReactJs
+                </li>
+                <li>
+                  <span>Data Analytics skills</span><br />Python | Pandas |
+                  Numpy | Matplotlib | Seaborn | Scikit-Learn | Seaborn |
+                  Streamlit
+                </li>
+                <li>
+                  <span>Other Programming Languages skills</span><br />C | C++ |
+                  MySql
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022</span><br />attend a Robotics Summer camp at
+                  Maharishi Convent School
+                </li>
+                <li>
+                  <span>2021-2023</span><br />Jio customer Associate at JIO
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022-current</span><br />Btech from ShriRam Institute of
+                  information technology(Artificial Intelligence & Data Science)
+                </li>
+                <li>
+                  <span>2021</span><br />DCA from Makhanlal Chaturvedi
+                  University Bhopal
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------------------------------services------------------------------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Web Designer</h2>
+            <p>
+              <b>Responsive Web Design</b> I create websites that provide a
+              seamless user experience across all devices—desktop, tablet, and
+              mobile—ensuring your site looks great and functions perfectly no
+              matter where it’s viewed.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Developer</h2>
+            <p>
+              <b>Custom Frontend Development</b> I build fast, scalable, and
+              interactive user interfaces using HTML, CSS, and JavaScript,
+              tailored to your project needs. Whether it’s a simple landing page
+              or a complex web application, I create high-quality frontend
+              solutions.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <h2>Data Analyst</h2>
+            <p>
+              <b>Data Cleaning & Preparation</b> I transform raw data into a clean and
+              structured format by handling missing values, duplicates, and
+              outliers, ensuring the dataset is ready for analysis. <br>
+              <b>Data
+              Visualization<b> I create insightful, visually engaging charts,
+              graphs, and dashboards using tools like Tableau, Power BI, and
+              Matplotlib to help stakeholders understand complex data trends and
+              patterns. 
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------portfolio---------------------------------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connect you to the talented people around the world.
+                Download it from the play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work-2.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connect you to the talented people around the world.
+                Download it from the play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work-3.png" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connect you to the talented people around the world.
+                Download it from the play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------contact---------------------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> anushkadhakar442@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +91-9753190366</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/ianushkadhakar/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/anushkadhakar/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.youtube.com/@Anushkadhakar1"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="https://web.telegram.org/k/"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </div>
+            <a href="images/mera cvv.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copy right © Anushka. Made with <i class="fa-solid fa-heart"></i> by
+          Anushka Dhakar
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwRkxALeEBcNcJJ-uY2Vk7emAex0K7hv24bpanNBrOuc7ACs1GTf87xZvoHl3W4ffL88Q/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
